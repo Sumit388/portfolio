@@ -1,0 +1,167 @@
+.mario {
+    margin: 0;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+.Marioheading{
+    position: absolute;
+    top: -20px;
+    left: 320px;
+    z-index: 5;
+    color: black;
+}
+.Marioheading h2{
+    font-size: 3em;
+    letter-spacing: 15px;
+}
+  .mario canvas{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 67%;
+  }
+  .marioleftsec{
+    position: absolute;
+    right: 0;
+    top:0;
+    height: 100vh;
+    width: 33.5vw;
+
+  }
+  .marioglassBlock{
+    position: absolute;
+    top:1vh;
+    right: 0;
+    width: 100%;
+    height: 98%;
+    color: white;  
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(17, 0, 255, 0.2);
+    border-top: 2px solid rgba(255,255,255,0.5);
+    border-left: 2px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+  }
+  .MarioList{
+    position: absolute;
+    top:0vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.MariofirstBox{
+    width: 30%;
+    height: 10%;
+    margin: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.MariofirstBox:hover{
+    
+    box-shadow: 25px 25px 50px rgba(0,0,0,0.5);
+    background: rgb(255, 0, 153);
+}
+
+.MarioDesc{
+    
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top:14vh;
+    text-align: center;
+}
+.MarioDesc p{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+}
+@media(max-width:1200px){
+  .mario canvas{
+    top:40vh;
+    width: 100%;
+  }
+  .marioleftsec{
+    position: relative;
+    height: 40vh;
+    width: 100%;
+  }
+  .marioglassBlock{
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+  }
+  .Marioheading{
+    position: absolute;
+    top: 40vh;
+    left: 70%;
+    z-index: 5;
+    color: black;
+}
+.Marioheading h2{
+    font-size: 2em;
+    letter-spacing: 15px;
+}
+.MariofirstBox{
+  height: 20%;
+ font-size: 1.5em;
+}
+}
+@media(max-width:850px){
+  .mario canvas{
+    top:70vh;
+    width: 100%;
+  }
+  .marioleftsec{
+    position: relative;
+    height: 70vh;
+    width: 100%;
+  }
+  .marioglassBlock{
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+  }
+  .Marioheading{
+    position: absolute;
+    top: 70vh;
+    left: 2%;
+    z-index: 5;
+    color: black;
+}
+.Marioheading h2{
+    font-size: 1em;
+    letter-spacing: 15px;
+}
+.MarioList{
+  justify-content:flex-end;
+}
+.MariofirstBox{
+  height: 55px;
+ font-size: 1em;
+ width: 27%;
+
+ margin:20px 5px;
+}
+
+}

@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+.fullfrontsec{
+    width: 100%;
+    overflow: hidden;
+}
+.landingSec{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: #000;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+
+}
+.landingSec .bg2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.landingSec .fg1{
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    max-width: 27%;
+    z-index: 6;
+}
+.landingSec .banerFadeButton{
+    position: absolute;
+    top: 50vh;
+    left: 0;
+    z-index: 1;
+    height: 50vh;
+    width: 100vw;
+    background: linear-gradient(
+        180deg,
+        transparent,
+        #111,
+        black
+    );
+}
+.landingSecContent{
+    position: absolute;
+    left: 5vw;
+    max-width: 765px;
+    z-index: 1;
+}
+.landingSecContent h2{
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    line-height: 1.6em;
+}
+.landingSecContent h2 span{
+font-weight:900;
+font-size: 2em;
+letter-spacing: 6px;
+color: #000;
+}
+.landingSecContent p{
+    color:white;
+    margin-top: -35px;
+}
+.landingSecContent a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(191, 0, 255);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.landingSec .sci{
+    position: absolute;
+    top:50%;
+    right: 0;
+    transform: translateY(-50%);
+    width:25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background: white;
+    z-index: 9;
+}
+.landingSec .sci li{
+    list-style: none;
+}
+.landingSec .sci li a{
+    display: inline-block;
+    filter: invert(0);
+    font-size: 30px;
+    color: black;
+    padding: 10px;
+    transition: 0.5s;
+}
+.landingSec .sci li:hover a{
+    color: red;
+    font-size: 35px;
+}
+.landingSec .textBlocks{
+    position: absolute;
+    bottom: 0vh;
+    left: 5vw;
+    display: flex;
+    z-index: 3;
+    opacity: 1;
+    transition: 0.5s;
+}
+.landingSec .textBlocks .blocks{
+    position: relative;
+    padding: 20px;
+    margin-right: 40px;
+    max-width: 500px;
+    background:linear-gradient(rgba(43, 0, 255, 0.4),rgba(0,0,0,0.2)) ;
+    
+    box-shadow: 0px -2px 0px rgba(255, 255, 255, 1);
+}
+.landingSec .textBlocks .blocks h3{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+}
+.landingSec .textBlocks .blocks p{
+    color: rgb(255, 255, 255);
+}
+.Home1{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120vh;
+    font-family: 'Poppins',sans-serif;
+    overflow: hidden;
+}
+.Home1Quote{
+    width: 1200px;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.Home1Quote::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left:0%;
+    width: 100%;
+    height:100%;
+    background: url(./data/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 15px 25px 15px rgba(0,0,0,0.3);
+}
+.Home1 .blocks{
+    position: absolute;
+    left: 70px;
+    top: 60px;
+    padding-left: 130px;
+    z-index: 3;
+    
+}
+.Home1 .blocks .blockglass{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    width: 89vw;
+    height: 13vh;
+    color: white;  
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+}
+
+.Home1Quote .box{
+    position: relative;
+    margin: 30px;
+    width: 320px;
+    height: 400px;
+    background: white;
+    overflow: hidden;
+    transition: 0.5s;
+   z-index: 2;
+   box-sizing: border-box;
+   padding: 30px;
+   box-shadow: -10px 25px 50px rgba(0,0,0,0.2);
+}
+.Home1Quote .box:hover{
+    box-shadow: -20px 50px 100px rgba(0,0,0,0.5); 
+}
+.Home1Quote .box p{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+.Home1Quote .box:hover p{
+    color: white;
+}
+.Home1Quote .box h2{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.Home1Quote .box:hover h2{
+    color: white;
+}
+.Home1Quote .Home1bg{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+
+}
+.Home1Quote .box.box1:hover ~ .Home1bg,
+.Home1Quote .box.box1:hover{
+  opacity: 1;
+  background: linear-gradient(#03a9f4,#e91e63);
+}
+.Home1Quote .box.box1:hover ~.landingSec .textBlocks{
+    opacity: 0;
+}
+.Home1Quote .box.box2:hover ~ .Home1bg,
+.Home1Quote .box.box2:hover{
+  opacity: 1;
+  background: linear-gradient(#ffc107,#19fd36);
+}
+.Home1Quote .box.box3:hover ~ .Home1bg,
+.Home1Quote .box.box3:hover{
+  opacity: 1;
+  background: linear-gradient(#ffc107,#e91e63);
+}
+.Home1Quote .box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:-50%;
+    width: 100%;
+    height:100%;
+    background: rgba(255,255,255,0.2);
+    pointer-events: none;
+}
+.Home1textsec{
+    height: 100vh;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins',sans-serif;
+    
+}
+.Home1textsec::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#e91e63);
+    clip-path: circle(20% at 10%);
+}
+.Home1textsec::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00,#f0f);
+    clip-path: circle(30% at right);
+}
+.Home1textSection1{
+    margin:5vh  0;
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    z-index: 1;
+}
+.Home1textSection1 .sec1, .sec3{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    left: 20px;
+    height: 100%;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+}
+.Home1textSection1 .sec2, .sec4{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    right: 20px;
+    height: 100%;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+}
+.Home1textSection1 .sec1::before, .sec3::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    border-top: 5px solid rgb(255, 0, 81);
+    height: 100%;
+    width: 50vw;
+}
+.Home1textSection1 .sec2::before, .sec4::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    border-bottom: 5px solid rgb(255, 0, 81);
+    height: 100%;
+    width: 55vw;
+}
+.Home1textSection1 .sec1 h2,.sec2 h2,.sec3 h2,.sec4 h2{
+    padding: 0;
+    margin:0;
+}
+.Home1textSection1 .sec1 p,.sec2 p,.sec3 p,.sec4 p{
+    padding: 0;
+    margin: 0;
+}
+.textCenter{
+    position: absolute;
+    height: 100vh;
+    width: 20vw;
+    left:45vw;
+    z-index: 0;
+}
+.textCenter .textCenter1{
+    font-size: 8em; 
+    margin: -4px;
+    
+}
+.Home1textSection1 .sec1Square1{
+    position: absolute;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+    animation: swirl 10s linear infinite;
+}
+.Home1textSection1 .sec1Square2{
+    position: absolute;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+    animation: swirl 10s linear infinite;
+}
+@keyframes swirl{
+    0%,100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(40px);
+    }
+}
+.Home1textSection1 .sec1Square1:nth-child(1){
+    top: -70px;
+    left: 60px;
+    width: 100px;
+    height: 100px;
+    animation-delay: 1s;
+}
+.Home1textSection1 .sec1Square1:nth-child(2){
+    top: -70px;
+    left: 550px;
+    width: 70px;
+    height: 70px;
+    z-index: 2;
+    animation-delay: 2s;
+}
+.Home1textSection1 .sec1Square1:nth-child(3){
+    bottom: -120px;
+    left: 200px;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+    animation-delay: 3s;
+}
+.Home1textSection1 .sec1Square2:nth-child(1){
+    top: -70px;
+    right: 100px;
+    width: 90px;
+    height: 90px;
+    animation-delay: 0.5s;
+}
+.Home1textSection1 .sec1Square2:nth-child(2){
+    top: -70px;
+    right: 550px;
+    width: 70px;
+    height: 70px;
+    z-index: 2;
+    animation-delay: 1.5s;
+}
+.Home1textSection1 .sec1Square2:nth-child(3){
+    top: -120px;
+    right: 400px;
+    width: 120px;
+    height: 120px;
+    z-index: -20;
+    animation-delay: 0s;
+}
+@media(max-width:1250px){
+    .landingSec .fg1{
+        position: absolute;
+        bottom: 185px;
+        right: 100px;
+        max-width: 300px;
+        z-index: 6;
+    }
+    .Home1 .blocks .blockglass{
+       display: none ;
+    }
+    .textCenter .textCenter1{
+     display: none;
+        
+    }
+    .Home1textsec{
+        width: 100vw;
+    }
+    
+    .Home1textSection1 .sec1Square2:nth-child(3){
+        display: none;
+    }
+    .Home1textSection1 .sec1Square2:nth-child(2){
+        display: none;
+    }
+    .Home1textSection1 .sec1Square1:nth-child(2){
+        display: none;
+    }
+    .landingSec{
+        display: flex;
+        align-items: center;
+        overflow: visible;
+        height: 100vh;
+    }
+    
+    .landingSec .textBlocks{
+        position: absolute;
+        bottom:0vh;
+        display: flex;
+        flex-shrink: 1;
+    }
+    .landingSecContent {
+      max-width: 370px;
+    }
+    .landingSecContent h2{
+        font-size: 1.2em;
+        color: white;
+        font-weight: 400;
+        line-height: 1.6em;
+    }
+    .landingSecContent p{
+        color:white;
+        margin-top: -15px;
+    }
+
+}
+@media(max-width:800px){
+    .landingSec .fg1{
+        position: absolute;
+        bottom: 325px;
+        right: 10px;
+        max-width: 300px;
+        z-index: 6;
+    }
+    .landingSecContent {
+        top: 250px;
+        max-width: 370px;
+      }
+    .landingSec{
+        display: flex;
+        align-items: center;
+        overflow: visible;
+        height: 120vh;
+    }
+    .landingSec .textBlocks{
+        position: absolute;
+        bottom:0vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 1;
+    }
+    .landingSec .banerFadeButton{
+        position: absolute;
+        top: 60vh;
+        left: 0;
+        z-index: 1;
+        height: 60vh;
+        width: 100vw;
+        background: linear-gradient(
+            180deg,
+            transparent,
+            #111,
+            black
+        );
+    }
+}
+@media(max-width:750px){
+    .landingSec{
+        display: flex;
+        align-items: center;
+        height: 150vh;
+    }
+    .landingSec .fg1{
+        position: absolute;
+        top: 36%;
+        right: 30px;
+        max-width: 200px;
+        z-index: 0;
+    }
+    .landingSecContent {
+        top:90px;
+        max-width: 250px;
+      }
+      .landingSecContent h2{
+          font-size: 0.8em;
+          color: white;
+          font-weight: 400;
+          line-height: 1.6em;
+      }
+      .landingSecContent p{
+          color:white;
+          margin-top: -15px;
+      }
+      .landingSec .sci{
+        top:21%;
+    }
+    .landingSec .banerFadeButton{
+        position: absolute;
+        top: 100vh;
+        left: 0;
+        z-index: 1;
+        height: 50vh;
+        width: 100vw;
+        background: linear-gradient(
+            180deg,
+            transparent,
+            #111,
+            black
+        );
+    }
+  
+}

@@ -1,0 +1,356 @@
+.AboutMeSec{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.AboutMeSec .aboutMe{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,#1235fe,#e6007b);
+    overflow: hidden;
+}
+.AboutMeSec .aboutMe .aboutLayer{
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100vh;
+}
+.AboutMeSec .aboutMe .aboutLayer.layer1{
+    background: #03a9f4;
+    transform: skewX(-45deg) translateX(0);
+    z-index: 1;
+    box-shadow: 20px 0 10px rgba(0,0,0,0.25);
+}
+.AboutMeSec .aboutMe .aboutLayer.layer2{
+    background: #000;
+    transform: skewX(-45deg) translateX(-100px);
+    z-index: 3;
+    box-shadow: 20px 0 10px rgba(0,0,0,0.25);
+}
+.AboutMeSec .aboutMe .aboutLayer.layer3{
+    background: #ff3161;
+    transform: skewX(-45deg) translateX(-200px);
+    z-index: 5;
+    box-shadow: 20px 0 10px rgba(0,0,0,0.25);
+}
+.AboutMeSec .aboutMe .aboutLayer.layer4{
+    background: #fff;
+    transform: skewX(-45deg) translateX(-300px);
+    z-index: 8;
+    box-shadow: 20px 0 10px rgba(0,0,0,0.25);
+}
+.AboutMeSec .aboutMe .aboutLayer.layer4 .layer4text{
+    position: fixed;
+    top: 80px;
+    right: -100px;
+    transform: skewX(45deg) rotateZ(-45deg);
+}
+.AboutMeSec .aboutMe .aboutLayer.layer5{
+    background: #ff3161;
+    transform: skewX(45deg) translateX(0px);
+    z-index: 2;
+    box-shadow: 20px 0 10px rgba(0,0,0,0.25);
+}
+.AboutMeSec .aboutMe .aboutLayer.layer6{
+    background: #03a9f4;
+    transform: skewX(45deg) translateX(-100px);
+    z-index: 4;
+    box-shadow: 20px 0 10px rgba(0,0,0,0.25);
+}
+.AboutMeSec .aboutMe .aboutLayer.layer7{
+    background: #000;
+    transform: skewX(45deg) translateX(-200px);
+    z-index: 6;
+    box-shadow: 20px 0 10px rgba(0,0,0,0.25);
+}
+.AboutMeSec .aboutMe .aboutLayer.layer8{
+    background:linear-gradient(45deg,#000000,#cf0072);
+    transform: skewX(45deg) translateX(-300px);
+    z-index: 7;
+    box-shadow: 20px 0 10px rgba(0,0,0,0.25);
+    overflow: hidden;
+}
+.AboutMeSec .aboutMe .aboutLayer.layer8 .BoutLoaderImg img{
+    position: absolute;
+    bottom: -1820px;
+    right:-1200px;
+    transform: skewX(-45deg) translateX(-300px) scale(0.22);
+}
+.AboutMeSec .aboutMe .aboutLayer.layer9{
+    background: transparent;
+    transform: skewX(45deg) translateX(-300px);
+    z-index: 9;
+    box-shadow: 20px 0 10px rgba(0,0,0,0.25);
+}
+.Aboutloader{
+    position: absolute;
+    top:270px;
+    left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.Aboutloader span{
+    width: 30px;
+    height: 100px;
+    margin: 0 5px;
+    background: #fff;
+    animation: loaderWave 1.4s linear infinite;   
+}
+.Aboutloader span:nth-child(1){
+    animation-delay: 0s;
+}
+.Aboutloader span:nth-child(2){
+    animation-delay: 0.2s;
+}
+.Aboutloader span:nth-child(3){
+    animation-delay: 0.4s;
+}
+.Aboutloader span:nth-child(4){
+    animation-delay: 0.6s;
+}
+.Aboutloader span:nth-child(5){
+    animation-delay: 0.8s;
+}
+.Aboutloader span:nth-child(6){
+    animation-delay: 1s;
+}
+.Aboutloader span:nth-child(7){
+    animation-delay: 1.2s;
+}
+@keyframes loaderWave{
+    0%{
+        box-shadow: 0 0 0 rgba(0,0,0,0.5);
+        opacity: 0;
+        transform: translateX(-10px) scale(1);
+    }
+    50%{
+        box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        opacity: 1;
+        transform: translateX(0px) scale(1.2);
+    }
+    100%{
+        box-shadow: 0 0 0 rgba(0,0,0,0.5);
+        opacity: 0;
+    }
+
+}
+.loaderText{
+    position: absolute;
+    top:390px;
+    left: 25px;
+    z-index: 10;
+}
+.loaderText h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 900;
+    color: #000000;
+}
+.aboutBalls .balls{
+    position: absolute;
+    right: 0;
+    bottom: -40vh;
+    height: 50vh;
+    width: 50vw;
+    z-index: 0;
+     
+}
+.aboutBalls .balls.ball1{
+    background: linear-gradient(#f00,rgb(255, 255, 255));
+    clip-path: circle(10% at center);
+    animation: ballsMove 20s linear infinite; 
+}
+.aboutBalls .balls.ball2{
+    right: -20vh;
+    background: linear-gradient(rgb(30, 0, 255),rgb(255, 255, 255));
+    clip-path: circle(5% at center);
+    animation: ballsMove 15s linear infinite;
+    animation-delay: 3s; 
+}
+.aboutBalls .balls.ball3{
+    right: -30vh;
+    background: linear-gradient(rgb(255, 0, 234),rgb(255, 255, 255));
+    clip-path: circle(8% at center);
+    animation: ballsMove 18s linear infinite;
+    animation-delay: 10s; 
+}
+.aboutBalls .balls.ball4{
+    right: -20vh;
+    background: linear-gradient(#f00,rgb(255, 255, 255));
+    clip-path: circle(8% at center);
+    animation: ballsMove 25s linear infinite; 
+    animation-delay: 15s; 
+}
+.aboutBalls .balls.ball5{
+    right: 20vh;
+    background: linear-gradient(rgb(30, 0, 255),rgb(255, 255, 255));
+    clip-path: circle(7% at center);
+    animation: ballsMove 20s linear infinite;
+    animation-delay: 8s; 
+}
+.aboutBalls .balls.ball6{
+    right: 30vh;
+    background: linear-gradient(rgb(255, 0, 234),rgb(255, 255, 255));
+    clip-path: circle(5% at center);
+    animation: ballsMove 25s linear infinite;
+    animation-delay: 4s; 
+}
+.aboutBalls .balls.ball7{
+    right: -40vh;
+    background: linear-gradient(rgb(30, 0, 255),rgb(255, 255, 255));
+    clip-path: circle(8% at center);
+    animation: ballsMove 20s linear infinite;
+    animation-delay: 8s; 
+}
+.aboutBalls .balls.ball8{
+    right: 10vh;
+    background: linear-gradient(rgb(255, 0, 234),rgb(255, 255, 255));
+    clip-path: circle(5% at center);
+    animation: ballsMove 15s linear infinite;
+    animation-delay: 8s; 
+}
+@keyframes ballsMove{
+         0%{
+            transform: translateY(0px);
+         }
+         100%{
+            transform: translateY(-1000px);
+         }
+}
+.mainaboutContainer{
+    position: absolute;
+    right: 0;
+    top:5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: -10px 40px;
+    max-width: 400px;
+    gap: 10px;
+    z-index: 10;
+}
+.mainaboutContainer h1{
+    color:rgb(255, 255, 255);
+}
+.mainaboutContainer .aboutTab{
+    position: relative;
+    padding: 0px 10px 20px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(8, 0, 255, 0.3);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.mainaboutContainer .aboutTab input{
+    appearance: none;
+}
+.mainaboutContainer .aboutTab label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;   
+}
+.mainaboutContainer .aboutTab label::after{
+    content: '!';
+    position: absolute;
+    right: 20px;
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 1);
+    transition: 0.5s;
+}
+.mainaboutContainer .aboutTab:hover label::after{
+    color: rgb(255, 255, 255);
+}
+.mainaboutContainer .aboutTab label h2{
+    width: 40px;
+    height: 30px;
+    background: rgba(255, 254, 254,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.mainaboutContainer .aboutTab label h3{
+    position: relative;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+.mainaboutContainer .aboutTab .aboutTabContent{
+    max-height: 0;
+    border-top: 0.5px solid rgba(255, 254, 254,0.5);
+    transition: 0.2s;
+    overflow: hidden;
+}
+.mainaboutContainer .aboutTab .aboutTabContent.openedTab{
+    max-height: 100vh;
+}
+.mainaboutContainer .aboutTab .aboutTabContent p{
+    position: relative;
+    padding: 10px 0;
+    color: #fff;
+}
+@media (max-width:1400px){
+    .Aboutloader{
+        display: none;
+    }
+    .loaderText{
+        display: none;
+    }
+    .mainaboutContainer .aboutTab{
+      background: rgba(0, 38, 255, 0.3);
+    }
+}
+@media (max-width:850px){
+    .AboutMeSec .aboutMe{
+        position: relative;
+        width: 100%;
+        max-height: 150vh;
+        background: linear-gradient(45deg,#1235fe,#e6007b);
+        overflow: hidden;
+    }
+    .AboutMeSec .aboutMe .aboutLayer.layer4 .layer4text{
+        display: none;
+    }
+    .mainaboutContainer{
+        flex-shrink: 1;
+        position: absolute;
+        top:50px;
+        left:5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        max-width: 400px;
+        gap: 10px;
+        z-index: 10;
+    }
+    .mainaboutContainer h1{
+        position: absolute;
+        top: -10px;
+        color: rgb(255, 255, 255);
+        right: -25px;
+        font-size: 15px;
+    }
+    .mainaboutContainer .aboutTab{
+        background: rgba(0, 38, 255, 0.4);
+      }
+      .AboutMeSec .aboutMe .aboutLayer.layer8 .BoutLoaderImg img{
+        position: absolute;
+        bottom: -1820px;
+        right:-1300px;
+        transform: skewX(-45deg) translateX(-300px) scale(0.1);
+    }
+}

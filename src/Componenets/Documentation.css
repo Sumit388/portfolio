@@ -1,0 +1,53 @@
+.DocumentationSec{
+  height: 100vh ;
+  width: 100%;
+  overflow: hidden;
+}
+.documentationbg{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+} 
+.documentationbg::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00,#f0f);
+    clip-path: circle(40% at 30%);
+}
+.documentationbg::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#cf00a6,#07008d);
+    clip-path: circle(20% at 90% 40%);
+}
+.documentationtext{
+    position: absolute;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 2;
+}
+.documentationheading{
+    position: relative;
+    width: 100%;
+}
+.documentationpara {
+    position: relative;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+}

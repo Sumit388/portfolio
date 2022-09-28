@@ -1,0 +1,356 @@
+.hobbies{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background: rgb(255, 255, 255);
+width: 100vw;
+display: flex;
+}
+.HobbiesSection{
+    position: relative;
+    width:50vw;
+    height: 100vh;
+    z-index: 2;
+}
+.HobbiesSocial .HobbiesSocialsci{
+    position: absolute;
+    top:60px;
+    left: 56vw;
+    transform: translateY(-50%);
+    height:25px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 4;
+    cursor: pointer;
+}
+.HobbiesSocial .HobbiesSocialsci li{
+    list-style: none;
+}
+.HobbiesSocial .HobbiesSocialsci li:nth-child(1){
+    display: inline-block;
+    filter: invert(0);
+    font-size: 30px;
+    color: rgb(130, 0, 134);
+    padding: 4vw;
+    transition: 0.5s;
+}
+
+.HobbiesSocial .HobbiesSocialsci li a{
+    display: inline-block;
+    filter: invert(0);
+    font-size: 30px;
+    color: rgb(130, 0, 134);
+    padding: 4vw;
+    transition: 0.5s;
+}
+.HobbiesSocial .HobbiesSocialsci li a:hover{
+   
+    color: rgb(255, 0, 0);
+    font-size: 40px;
+ 
+}
+
+.HobbiesSection video{
+    position: absolute;
+    top:20vh;
+    left:0vw;
+    width:100%;
+    height: 40vh;
+    overflow: hidden;
+
+}
+.HobbiesSection .videoNvigation{
+    position: absolute;
+    width: 100%;
+    bottom: 80px;
+    height: 20vh;
+    left: -3vw;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.HobbiesSection .videoNvigation li{
+    list-style: none;
+    cursor: pointer;
+    margin: 0 20px;
+    border-radius: 4px;
+    background: rgb(0, 0, 0);
+    padding: 3px 3px 0;
+    opacity: 0.7;
+    transform: 0.5s;
+}
+.HobbiesSection .videoNvigation li:hover {
+    opacity: 1;
+    border: 2px solid white;
+}
+.HobbiesSection .videoNvigation li img{
+    width: 120px;
+    transition: 0.5s;
+}
+.HobbiesSection .videoNvigation li img:hover{
+    width: 170px;
+}
+
+.HobbiesSection .HobbiesText1{
+    position: absolute;
+    bottom: 100px;
+    left: 0vw;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.HobbiesSection .HobbiesText1 h2{
+    color: rgb(210, 0, 157);
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+.HobbiesRightPanel{
+    position: absolute;
+    right: 0;
+    top: 5%;
+    width: 45%;
+    height: 90%; 
+    z-index: 2;
+}
+.HobbiesRightPanel .HobbiesList{
+    position: absolute;
+    top:22vh;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.HobbiesRightPanel .hobbiesListHeading{
+    
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top:14vh;
+    text-align: center;
+
+}
+
+.HobbiesRightPanel .hobbiesListHeading h2{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+.HobbiesRightPanel .hobbiesDesc{
+    
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    bottom:14vh;
+    text-align: center;
+}
+.HobbiesRightPanel .hobbiesDesc p{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.HobbiesRightPanel .HobbiesList .firstBox{
+    width: 30%;
+    height: 40%;
+    margin: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255, 0, 217, 0.5);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.HobbiesRightPanel .HobbiesList .firstBox:hover{
+    
+    box-shadow: 25px 25px 50px rgba(0,0,0,0.5);
+    background: rgb(255, 0, 153);
+}
+.hobbies::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#e91e63);
+    clip-path: circle(40% at 90% 70%);
+}
+.hobbies::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#e91e63);
+    clip-path: circle(8% at 60% 10%);
+}
+
+@media(max-width:1450px){
+    .HobbiesSocial .HobbiesSocialsci{
+        position: absolute;
+        top:60px;
+        left: 90px;
+    }
+    .HobbiesRightPanel .hobbiesListHeading{
+    
+        position: absolute;
+        width: 100%;
+        height: 10vh;
+        top:-4vh;
+    
+    }
+    .HobbiesSection .video{
+     
+        width:100%;
+        height: 41vh;
+        overflow: hidden;
+        object-position:contain;
+        
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    }
+    .HobbiesSection .HobbiesText1 h2{
+        color: rgb(0, 0, 0);
+        margin-top: 40px;
+        font-size: 30px;
+       
+    }
+}
+@media(max-width:1300px){
+    .hobbies::before{
+        height: 110%;
+        clip-path: circle(30% at 90% 40%);
+    }
+    .HobbiesSocial .HobbiesSocialsci{
+        width: 100%;
+        position: absolute;
+        top:60px;
+        left: -10px;
+        display: flex;
+        justify-content: center;
+
+    }
+    .HobbiesRightPanel .HobbiesList .firstBox{
+        width: 150px;
+        font-size: 15px;
+    }
+    .HobbiesSection{
+        position: relative;
+        width:100vw;
+        height: 100vh;
+        z-index: 2;
+    }
+    .HobbiesSection .videoNvigation{
+        width: 100%;
+        position: absolute;
+        left: -40px;
+        bottom: 80px;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+      
+    
+    }
+    .HobbiesRightPanel .hobbiesListHeading{
+    
+        position: absolute;
+        width: 100%;
+        height: 10vh;
+        top:-4vh;
+    
+    }
+    .HobbiesRightPanel{
+        position: absolute;
+        left: 0;
+        top: 100vh;
+        width: 100%;
+        height: 90%; 
+        z-index: 2;
+    }
+}
+@media(max-width:700px){
+    .hobbies::before{
+        clip-path: circle(40% at 90% 60%);
+    }
+    .HobbiesSection .videoNvigation li img{
+        width: 60px;
+    }
+    .HobbiesSection .videoNvigation li img:hover{
+        width: 80px;
+    }
+    .HobbiesSection .videoNvigation li{
+        margin: -10px 5px;
+    }
+    .HobbiesSection .HobbiesText1{
+        top:400px
+    }
+    .HobbiesSection .HobbiesText1 h2{
+        
+        font-size: 15px;
+        letter-spacing: 1px;
+       
+    }
+    .HobbiesSocial .HobbiesSocialsci{
+        justify-content: flex-end;
+        width: 100%;
+        top:40px;
+    }
+    .HobbiesRightPanel .hobbiesDesc{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        height: 20%;
+        bottom:8%;
+        left: 2%;
+    }
+    .HobbiesSocial .HobbiesSocialsci li a{
+  
+        font-size: 25px;
+        
+    }
+    .HobbiesSection .videoNvigation{
+   
+    top: 280px;
+}
+.HobbiesSection video{
+    position: absolute;
+    top:60px;
+    left:0%;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    margin-left: 1px solid black;
+
+}
+.HobbiesRightPanel{
+    position: absolute;
+    left: 0;
+    top: 510px;
+    width: 100%;
+    height: 90%; 
+    z-index: 2;
+}
+.HobbiesRightPanel .HobbiesList .firstBox{
+    height: 30%;
+}
+.HobbiesRightPanel .HobbiesList {
+    top:100px;
+}
+}
