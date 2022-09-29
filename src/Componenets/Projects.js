@@ -2,6 +2,7 @@ import React from 'react'
 import './Projects.css'
 import mario from './data/mario.png'
 import netflix from './data/netflix.png'
+import { Link } from 'react-router-dom'
 function Projects() {
   return (
     <div className='projectsBody'>
@@ -20,11 +21,11 @@ function Projects() {
                 </div>
             </div>
             <div className="projectBox">
-            <a href="\#">
+            <Link to='/projects'>
                 <div className="projectContent">
                     <img src="" alt="" />
                     <p>Coming really soon.</p>
-                </div></a>
+                </div></Link>
                 </div>
                 <div className="projectBox">
                 <div className="projectContent">
@@ -33,11 +34,11 @@ function Projects() {
                 </div>
             </div>
             <div className="projectBox">
-            <a href="\#">
+            <Link to='/projects'>
                 <div className="projectContent">
                     <img src="" alt="" />
                     <p>PROJECTS</p>
-                </div></a>
+                </div></Link>
             </div>
             <div className="projectBox">
             <a href='https://netflix-sumit388.netlify.app/'>
@@ -47,11 +48,11 @@ function Projects() {
                 </div></a>
             </div>
             <div className="projectBox">
-            <a href="\#">
+            <Link to='/projects'>
                 <div className="projectContent">
                     <img src="" alt="" />
                     <p>Coming really soon.</p>
-                </div></a>
+                </div></Link>
             </div>
            
         </div>

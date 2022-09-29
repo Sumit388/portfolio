@@ -110,7 +110,7 @@ function Home1() {
             <div className="Home1Quote" >
                 <div >
                     <div className="box box1" ref={middleBlock1}>
-                        <p>Java is my primary programming language & JS is so versartile. CSS is beautiful & HTML sctructured. React make things easy & Firebase manages my data.</p>
+                        <p>Java is my primary programming language & JS is so versatile. CSS is beautiful & HTML structured. React make things easy & Firebase manages my data.</p>
                         <h2>Programming Languages</h2>
                     </div>
                     <div className="Home1bg"></div>

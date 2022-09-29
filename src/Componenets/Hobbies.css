@@ -1,15 +1,21 @@
+.hobbiesMain{
+    width: 100%;
+    overflow: hidden;
+}
 .hobbies{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 background: rgb(255, 255, 255);
-width: 100vw;
+width: 100%;
+height: 745px;
 display: flex;
+overflow: hidden;
 }
 .HobbiesSection{
     position: relative;
     width:50vw;
-    height: 100vh;
+    height: 745px;
     z-index: 2;
 }
 .HobbiesSocial .HobbiesSocialsci{
@@ -55,10 +61,10 @@ display: flex;
 
 .HobbiesSection video{
     position: absolute;
-    top:20vh;
+    top:20%;
     left:0vw;
     width:100%;
-    height: 40vh;
+    height: 40%;
     overflow: hidden;
 
 }
@@ -66,7 +72,7 @@ display: flex;
     position: absolute;
     width: 100%;
     bottom: 80px;
-    height: 20vh;
+    height: 20%;
     left: -3vw;
     z-index: 3;
     display: flex;
@@ -116,12 +122,12 @@ display: flex;
     right: 0;
     top: 5%;
     width: 45%;
-    height: 90%; 
+    height: 670.5px; 
     z-index: 2;
 }
 .HobbiesRightPanel .HobbiesList{
     position: absolute;
-    top:22vh;
+    top:22%;
     height: 40%;
     width: 100%;
     display: flex;
@@ -134,7 +140,7 @@ display: flex;
     position: absolute;
     width: 100%;
     height: 10vh;
-    top:14vh;
+    top:14%;
     text-align: center;
 
 }
@@ -148,8 +154,8 @@ display: flex;
     
     position: absolute;
     width: 100%;
-    height: 10vh;
-    bottom:14vh;
+    height: 10%;
+    bottom:14%;
     text-align: center;
 }
 .HobbiesRightPanel .hobbiesDesc p{
@@ -186,7 +192,7 @@ display: flex;
     top: 0;
     left:0;
     width: 100%;
-    height: 100%;
+    height: 745px;
     background: linear-gradient(#2196f3,#e91e63);
     clip-path: circle(40% at 90% 70%);
 }
@@ -196,7 +202,7 @@ display: flex;
     top: 0;
     left:0;
     width: 100%;
-    height: 100%;
+    height: 745px;
     background: linear-gradient(#2196f3,#e91e63);
     clip-path: circle(8% at 60% 10%);
 }
@@ -211,14 +217,14 @@ display: flex;
     
         position: absolute;
         width: 100%;
-        height: 10vh;
-        top:-4vh;
+        height: 70px;
+        top:30px;
     
     }
     .HobbiesSection .video{
      
         width:100%;
-        height: 41vh;
+        height: 41%;
         overflow: hidden;
         object-position:contain;
         
@@ -233,11 +239,11 @@ display: flex;
 }
 @media(max-width:1300px){
     .hobbies::before{
-        height: 110%;
+        height: 900px;
         clip-path: circle(30% at 90% 40%);
     }
     .HobbiesSocial .HobbiesSocialsci{
-        width: 100%;
+        width: calc(100% - 20px);
         position: absolute;
         top:60px;
         left: -10px;
@@ -245,6 +251,7 @@ display: flex;
         justify-content: center;
 
     }
+    
     .HobbiesRightPanel .HobbiesList .firstBox{
         width: 150px;
         font-size: 15px;
@@ -252,7 +259,7 @@ display: flex;
     .HobbiesSection{
         position: relative;
         width:100vw;
-        height: 100vh;
+        height: 745px;
         z-index: 2;
     }
     .HobbiesSection .videoNvigation{
@@ -260,7 +267,7 @@ display: flex;
         position: absolute;
         left: -40px;
         bottom: 80px;
-        height: 20vh;
+        height: 20%;
         display: flex;
         justify-content: center;
       
@@ -270,17 +277,18 @@ display: flex;
     
         position: absolute;
         width: 100%;
-        height: 10vh;
-        top:-4vh;
+        height: 10%;
+        top:-4%;
     
     }
     .HobbiesRightPanel{
         position: absolute;
         left: 0;
-        top: 100vh;
-        width: 100%;
+        top: 745px;
+        width: 100vw;
         height: 90%; 
         z-index: 2;
+        overflow: hidden;
     }
 }
 @media(max-width:700px){
@@ -300,14 +308,15 @@ display: flex;
         top:400px
     }
     .HobbiesSection .HobbiesText1 h2{
-        
-        font-size: 15px;
+        font-size: 18px;
         letter-spacing: 1px;
        
     }
     .HobbiesSocial .HobbiesSocialsci{
+        
+        width: calc(100% - 10px);
+        padding-right: 0px;
         justify-content: flex-end;
-        width: 100%;
         top:40px;
     }
     .HobbiesRightPanel .hobbiesDesc{
@@ -334,7 +343,7 @@ display: flex;
     top:60px;
     left:0%;
     width: 100%;
-    height: 40vh;
+    height: 40%;
     overflow: hidden;
     margin-left: 1px solid black;
 
@@ -342,9 +351,9 @@ display: flex;
 .HobbiesRightPanel{
     position: absolute;
     left: 0;
-    top: 510px;
+    top: 570px;
     width: 100%;
-    height: 90%; 
+    height: 670.5px; 
     z-index: 2;
 }
 .HobbiesRightPanel .HobbiesList .firstBox{
@@ -353,4 +362,10 @@ display: flex;
 .HobbiesRightPanel .HobbiesList {
     top:100px;
 }
+.HobbiesRightPanel .hobbiesListHeading{
+    
+    top:-3%;
+
+}
+
 }

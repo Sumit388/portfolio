@@ -67,7 +67,7 @@ function Aboutme() {
                 <h3>My Skils</h3>
               </label>
               <div className={dispCont===2?"aboutTabContent openedTab":"aboutTabContent"}>
-                <p>Java, OOPs, DSA, JavaScript, CSS, HTML, React.js. I also have some knowlegde of Express.js, MongoDB, Git, Bootstrap. </p>
+                <p>Java, OOPs, DSA, JavaScript, CSS, HTML, React.js. I also have some knowlegde of Firebase, Tailwind CSS, Git, Bootstrap. </p>
               </div>
             </div>
             <div className="aboutTab">

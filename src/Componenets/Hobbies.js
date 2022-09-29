@@ -34,7 +34,7 @@ function Hobbies() {
         }
     }
     return (
-        <div>
+        <div className='hobbiesMain'>
             <div className="hobbies">
                 <div className="HobbiesSocial">
                 <ul className="HobbiesSocialsci">

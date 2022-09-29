@@ -11,13 +11,13 @@
     background: #000;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 746px;
     overflow: hidden;
 
 }
 .landingSec .bg2{
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width:100%;
     height: 100%;
@@ -27,17 +27,17 @@
 
 .landingSec .fg1{
     position: absolute;
-    bottom: 0px;
+    top: 100px;
     right: 5px;
     max-width: 27%;
     z-index: 6;
 }
 .landingSec .banerFadeButton{
     position: absolute;
-    top: 50vh;
+    top: 50%;
     left: 0;
     z-index: 1;
-    height: 50vh;
+    height: 50%;
     width: 100vw;
     background: linear-gradient(
         180deg,
@@ -111,7 +111,7 @@ color: #000;
 }
 .landingSec .textBlocks{
     position: absolute;
-    bottom: 0vh;
+    top: 560px;
     left: 5vw;
     display: flex;
     z-index: 3;
@@ -142,7 +142,7 @@ color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 120vh;
+    min-height: 895.2px;
     font-family: 'Poppins',sans-serif;
     overflow: hidden;
 }
@@ -182,7 +182,7 @@ color: #000;
     justify-content: center;
     left: 0;
     width: 89vw;
-    height: 13vh;
+    height: 97px;
     color: white;  
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
     border-radius: 15px;
@@ -269,7 +269,7 @@ color: #000;
     pointer-events: none;
 }
 .Home1textsec{
-    height: 100vh;
+    min-height: 746px;
     max-width: 100%;
     position: relative;
     display: flex;
@@ -298,9 +298,9 @@ color: #000;
     clip-path: circle(30% at right);
 }
 .Home1textSection1{
-    margin:5vh  0;
+    margin:30px  0;
     position: relative;
-    height: 20vh;
+    height: 120px;
     width: 100%;
     z-index: 1;
 }
@@ -362,7 +362,7 @@ color: #000;
 }
 .textCenter{
     position: absolute;
-    height: 100vh;
+    height: 746px;
     width: 20vw;
     left:45vw;
     z-index: 0;
@@ -449,7 +449,7 @@ color: #000;
 @media(max-width:1250px){
     .landingSec .fg1{
         position: absolute;
-        bottom: 185px;
+        top: 85px;
         right: 100px;
         max-width: 300px;
         z-index: 6;
@@ -478,12 +478,11 @@ color: #000;
         display: flex;
         align-items: center;
         overflow: visible;
-        height: 100vh;
     }
     
     .landingSec .textBlocks{
         position: absolute;
-        bottom:0vh;
+        bottom:0;
         display: flex;
         flex-shrink: 1;
     }
@@ -505,7 +504,7 @@ color: #000;
 @media(max-width:800px){
     .landingSec .fg1{
         position: absolute;
-        bottom: 325px;
+        bottom: 300px;
         right: 10px;
         max-width: 300px;
         z-index: 6;
@@ -518,7 +517,7 @@ color: #000;
         display: flex;
         align-items: center;
         overflow: visible;
-        height: 120vh;
+        height: 895.2px;
     }
     .landingSec .textBlocks{
         position: absolute;
@@ -532,10 +531,10 @@ color: #000;
     }
     .landingSec .banerFadeButton{
         position: absolute;
-        top: 60vh;
+        top: 50%;
         left: 0;
         z-index: 1;
-        height: 60vh;
+        height: 50%;
         width: 100vw;
         background: linear-gradient(
             180deg,
@@ -549,14 +548,19 @@ color: #000;
     .landingSec{
         display: flex;
         align-items: center;
-        height: 150vh;
+        height: 1119px;
     }
     .landingSec .fg1{
         position: absolute;
-        top: 36%;
+        top: 33.5%;
         right: 30px;
         max-width: 200px;
         z-index: 0;
+    }
+    .landingSec .textBlocks{
+        top:690px;
+        bottom: auto;
+        
     }
     .landingSecContent {
         top:90px;
@@ -572,15 +576,21 @@ color: #000;
           color:white;
           margin-top: -15px;
       }
+      .landingSec .textBlocks .blocks h3{
+        font-size: 1em ;
+    }
+    .landingSec .textBlocks .blocks p{
+        font-size: 0.8em ;
+    }
       .landingSec .sci{
         top:21%;
     }
     .landingSec .banerFadeButton{
         position: absolute;
-        top: 100vh;
+        top: 60%;
         left: 0;
         z-index: 1;
-        height: 50vh;
+        height: 40%;
         width: 100vw;
         background: linear-gradient(
             180deg,
@@ -589,5 +599,6 @@ color: #000;
             black
         );
     }
+  
   
 }
